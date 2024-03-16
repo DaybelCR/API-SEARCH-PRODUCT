@@ -1,4 +1,4 @@
 const server = require('./src/app.js');
-
-server.listen(3001)
-console.log("server on PORT",3001)
+const { PORT } = process.env;
+server.listen(PORT)
+console.log("server on PORT",PORT)
